@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class ElasticsearchApiController {
+
 	@GetMapping(path = "/_mapping")
 	public String mapping() {
 		return """
@@ -31,4 +32,5 @@ public class ElasticsearchApiController {
 				}
 				""";
 	}
+
 }
