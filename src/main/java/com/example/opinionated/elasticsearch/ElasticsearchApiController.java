@@ -44,7 +44,7 @@ public class ElasticsearchApiController {
 
 	@PostMapping(path = "/_msearch")
 	public String msearch(@RequestBody String body) {
-		System.out.println("body="+body);
+		System.out.println("body=" + body);
 		return """
 				{
 				  "took": 46,
